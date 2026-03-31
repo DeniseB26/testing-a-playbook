@@ -241,56 +241,6 @@
   .zone-tag.covered::before { background: #2980b9; }
   .zone-tag.regular::before { background: #27ae60; }
 
-  .summary-box {
-    border: 1.5px solid var(--navy);
-    border-radius: 4px;
-    padding: 10px 14px;
-    margin: 8px 0;
-    background: var(--gray-light);
-  }
-
-  .summary-title {
-    font-weight: 700;
-    color: var(--navy);
-    font-size: 9.5pt;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    margin-bottom: 6px;
-  }
-
-  .summary-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4px 20px;
-    font-size: 9.5pt;
-  }
-
-  .summary-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px dotted var(--border);
-    padding: 2px 0;
-  }
-
-  .summary-row .label { color: var(--gray); }
-  .summary-row .value {
-    font-weight: 700;
-    border-bottom: 1px solid var(--text);
-    min-width: 40px;
-    text-align: right;
-  }
-
-  .summary-total {
-    border-top: 2px solid var(--navy);
-    margin-top: 6px;
-    padding-top: 4px;
-    font-weight: 700;
-    display: flex;
-    justify-content: space-between;
-    font-size: 10pt;
-  }
-
   .text-template {
     background: #f8fafc;
     border: 1px solid var(--border);
@@ -409,7 +359,6 @@
 <div class="date-line">
   <div>Date: <span class="blank"></span></div>
   <div>Ship(s) Today: <span class="blank" style="width:200px"></span></div>
-  <div>MSC Seascape Day? &nbsp; YES / NO</div>
 </div>
 
 <!-- SECTION 1: LOGIN & SETUP -->
@@ -421,67 +370,30 @@
   <div class="section-body">
     <div class="check-item">
       <div class="check-box"></div>
-      <div class="check-text">Log into <strong>Netpark</strong> (app at the office, browser at home)</div>
-    </div>
-    <div class="check-item">
-      <div class="check-box"></div>
-      <div class="check-text">Check the <strong>Port of Galveston cruise schedule</strong> to confirm if today is an MSC Seascape day (affects closing time &amp; customer texts)</div>
-    </div>
-    <div class="note info">
-      <span class="note-icon">ℹ️</span>
-      <span>Use the official schedule only: <a href="https://www.portofgalveston.com/cruise-parking/cruise-schedule/" target="_blank" style="color:var(--teal);">portofgalveston.com/cruise-parking/cruise-schedule</a> — third-party sites may be inaccurate.</span>
+      <div class="check-text">Log into <strong>Netpark</strong></div>
     </div>
   </div>
 </div>
 
-<!-- SECTION 2: DUE BACK REPORT -->
-<div class="section theme-teal">
-  <div class="section-header">
-    <div class="step-num">2</div>
-    Run the Due Back Report
-  </div>
-  <div class="section-body">
-    <div class="check-item">
-      <div class="check-box"></div>
-      <div class="check-text">Go to <strong>Reports &rarr; Due Back Report</strong>, enter today's date in both fields</div>
-    </div>
-    <div class="check-item">
-      <div class="check-box"></div>
-      <div class="check-text">Run the report for each zone and note the count:</div>
-    </div>
-
-    <div class="zone-repeat">
-      <div class="zone-label">Run in this order:</div>
-      <div class="zone-list">
-        <div class="zone-tag covered">7707 Covered - Awnings &nbsp;&nbsp; Count: _______</div>
-        <div class="zone-tag regular">Discounted Outdoor Parking - No Shuttle &nbsp;&nbsp; Count: _______</div>
-        <div class="zone-tag tesla">7707 Tesla Chargers &nbsp;&nbsp; Count: _______</div>
-      </div>
-    </div>
-
-    <div class="summary-box">
-      <div class="summary-title">Due Back Summary — Write on Top Right Corner of First Printed Page</div>
-      <div class="summary-grid">
-        <div class="summary-row"><span class="label">Cars Due Back</span><span class="value">&nbsp;</span></div>
-        <div class="summary-row"><span class="label">Covered</span><span class="value">&nbsp;</span></div>
-        <div class="summary-row"><span class="label">Regular</span><span class="value">&nbsp;</span></div>
-        <div class="summary-row"><span class="label">Tesla</span><span class="value">&nbsp;</span></div>
-      </div>
-      <div class="summary-total"><span>TOTAL RESERVATIONS</span><span style="border-bottom:2px solid var(--navy);min-width:50px;">&nbsp;</span></div>
-    </div>
-  </div>
-</div>
-
-<!-- SECTION 3: PULL & PRINT -->
+<!-- SECTION 2: PULL & PRINT -->
 <div class="section theme-gold">
   <div class="section-header">
-    <div class="step-num">3</div>
+    <div class="step-num">2</div>
     Pull &amp; Print Reservations by Zone
   </div>
   <div class="section-body">
     <div class="check-item">
       <div class="check-box"></div>
       <div class="check-text">Go to <strong>Reservations</strong>, select today's date, then filter by zone</div>
+    </div>
+
+    <div class="check-item">
+      <div class="check-box"></div>
+      <div class="check-text">Click <strong>"Name"</strong> at the top of the list to alphabetize by last name</div>
+    </div>
+    <div class="check-item">
+      <div class="check-box"></div>
+      <div class="check-text">Scan for any <strong>balance due / refund due</strong></div>
     </div>
 
     <div class="zone-repeat">
@@ -492,19 +404,8 @@
         <div class="zone-tag covered">3rd — 7707 Covered - Awnings</div>
       </div>
     </div>
-
     <div class="check-item">
       <div class="check-box"></div>
-      <div class="check-text">For each zone: click <strong>"Name"</strong> to alphabetize, scan for any <strong>balance due / refund due</strong>, then <strong>print</strong></div>
-    </div>
-    <div class="check-item">
-      <div class="check-box"></div>
-      <div class="check-text">Handwrite the <strong>zone name</strong> at the bottom of each zone's first page (Tesla / Covered / Regular)</div>
-    </div>
-    <div class="check-item">
-      <div class="check-box"></div>
-      <div class="check-text">Write the <strong>Due Back summary</strong> (from Step 2) on the top right corner of the very first page</div>
-    </div>
     <div class="check-item">
       <div class="check-box"></div>
       <div class="check-text"><strong>Staple</strong> all pages together into one packet</div>
@@ -517,10 +418,10 @@
   </div>
 </div>
 
-<!-- SECTION 4: TEXT CUSTOMERS -->
+<!-- SECTION 3: TEXT CUSTOMERS -->
 <div class="section theme-teal">
   <div class="section-header">
-    <div class="step-num">4</div>
+    <div class="step-num">3</div>
     Text Customers
   </div>
   <div class="section-body">
@@ -580,10 +481,10 @@
   </div>
 </div>
 
-<!-- SECTION 5: HANDLE RESPONSES -->
+<!-- SECTION 4: HANDLE RESPONSES -->
 <div class="section theme-green">
   <div class="section-header">
-    <div class="step-num">5</div>
+    <div class="step-num">4</div>
     Handle Responses &amp; ETAs
   </div>
   <div class="section-body">
@@ -609,10 +510,10 @@
   </div>
 </div>
 
-<!-- SECTION 6: FOLLOW UP CALLS -->
+<!-- SECTION 5: FOLLOW UP CALLS -->
 <div class="section theme-red">
   <div class="section-header">
-    <div class="step-num">6</div>
+    <div class="step-num">5</div>
     Follow-Up Calls — Start at 12:00 PM
   </div>
   <div class="section-body">
